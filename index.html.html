@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Andrade | Engenharia da Computação & IA Generativa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card-container">
+    
+    <!-- Coluna da Esquerda: Perfil com a foto enviada -->
+    <section class="profile-section">
+      <div class="profile-image-wrapper">
+        <img 
+          src="lucas.jpg" 
+          alt="Lucas Andrade" 
+          class="profile-img"
+          onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'"
+        >
+      </div>
+
+      <div class="profile-info">
+        <h1 class="profile-name">Lucas Andrade</h1>
+        <p class="profile-role">Estudante de Eng. da Computação e IA Generativa</p>
+        <div class="timeline-span">
+          <span>2024</span>
+          <span class="arrow-divider"></span>
+          <span>2030</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coluna da Direita: Linha do Tempo (todos os módulos começam fechados) -->
+    <section class="timeline-section">
+      <div class="timeline-tree">
+
+        <!-- Módulo 1: NBsys -->
+        <div class="timeline-item" onclick="toggleItem(this)">
+          <div class="timeline-rail">
+            <div class="timeline-node"></div>
+            <div class="timeline-line">
+              <svg class="rail-arrow" viewBox="0 0 10 14" fill="none">
+                <path d="M5 0v10m0 0l-3-3m3 3l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="header-titles">
+                <span class="timeline-year">[2024 – 2025]</span>
+                <h2 class="timeline-title">💼 NBsys</h2>
+                <span class="timeline-subtitle">Assistente de Desenvolvimento</span>
+              </div>
+              <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+
+            <div class="timeline-details">
+              <div class="details-inner">
+                <p class="details-description">
+                  Atuação prática no desenvolvimento e manutenção de sistemas corporativos, resolução de tickets técnicos, refatoração de rotinas e suporte contínuo ao ciclo de vida de software da equipe.
+                </p>
+                <div class="tech-tags">
+                  <span class="tag">Desenvolvimento de Software</span>
+                  <span class="tag">SQL & Bases de Dados</span>
+                  <span class="tag">Git / GitHub</span>
+                  <span class="tag">Resolução de Problemas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Módulo 2: Uninassau -->
+        <div class="timeline-item" onclick="toggleItem(this)">
+          <div class="timeline-rail">
+            <div class="timeline-node"></div>
+            <div class="timeline-line">
+              <svg class="rail-arrow" viewBox="0 0 10 14" fill="none">
+                <path d="M5 0v10m0 0l-3-3m3 3l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="header-titles">
+                <span class="timeline-year">[2026 – Em andamento]</span>
+                <h2 class="timeline-title">🎓 Uninassau</h2>
+                <span class="timeline-subtitle">Bacharelado em Engenharia da Computação</span>
+              </div>
+              <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+
+            <div class="timeline-details">
+              <div class="details-inner">
+                <p class="details-description">
+                  Graduação com foco na convergência entre hardware e software. Envolve arquitetura computacional, circuitos lógicos, sistemas operacionais, algoritmos e estruturas de dados para engenharia de software de alta performance.
+                </p>
+                <div class="badge-row">
+                  <span class="status-badge">Previsão de Conclusão: 2030</span>
+                </div>
+                <div class="tech-tags">
+                  <span class="tag">Arquitetura de Computadores</span>
+                  <span class="tag">Estruturas de Dados</span>
+                  <span class="tag">Sistemas Embarcados</span>
+                  <span class="tag">Engenharia de Software</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Módulo 3: Irede -->
+        <div class="timeline-item" onclick="toggleItem(this)">
+          <div class="timeline-rail">
+            <div class="timeline-node"></div>
+            <div class="timeline-line">
+              <svg class="rail-arrow" viewBox="0 0 10 14" fill="none">
+                <path d="M5 0v10m0 0l-3-3m3 3l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="header-titles">
+                <span class="timeline-year">[2026 – Em andamento]</span>
+                <h2 class="timeline-title">☕ Irede</h2>
+                <span class="timeline-subtitle">Trilha Desenvolvimento Java</span>
+              </div>
+              <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+
+            <div class="timeline-details">
+              <div class="details-inner">
+                <p class="details-description">
+                  Capacitação intensiva no ecossistema Java moderno e desenvolvimento backend robusto. Envolve Programação Orientada a Objetos (POO), construção e consumo de APIs RESTful, Spring Boot e persistência com JPA/Hibernate.
+                </p>
+                <div class="badge-row">
+                  <span class="status-badge">Término Previsto: Dezembro / 2026</span>
+                </div>
+                <div class="tech-tags">
+                  <span class="tag">Java 21+</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">APIs REST</span>
+                  <span class="tag">JPA / Hibernate</span>
+                  <span class="tag">Clean Code</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Módulo 4: Geração Tech 4.0 -->
+        <div class="timeline-item" onclick="toggleItem(this)">
+          <div class="timeline-rail">
+            <div class="timeline-node"></div>
+          </div>
+
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="header-titles">
+                <span class="timeline-year">[Set/2026 – Nov/2026]</span>
+                <h2 class="timeline-title">🤖 Geração Tech 4.0</h2>
+                <span class="timeline-subtitle">Curso de IA Generativa</span>
+              </div>
+              <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+
+            <div class="timeline-details">
+              <div class="details-inner">
+                <p class="details-description">
+                  Imersão prática na construção de aplicações modernas com IA. Técnicas de engenharia de prompt avançada, arquiteturas RAG (Retrieval-Augmented Generation), vector databases, orquestração com LangChain e desenvolvimento de agentes inteligentes.
+                </p>
+                <div class="tech-tags">
+                  <span class="tag">Large Language Models</span>
+                  <span class="tag">Prompt Engineering</span>
+                  <span class="tag">RAG & Vetores</span>
+                  <span class="tag">LangChain</span>
+                  <span class="tag">Agentes Autônomos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    function toggleItem(clickedItem) {
+      const allItems = document.querySelectorAll('.timeline-item');
+      const wasActive = clickedItem.classList.contains('active');
+
+      // Fecha todos os módulos
+      allItems.forEach(item => {
+        item.classList.remove('active');
+        const details = item.querySelector('.timeline-details');
+        if (details) details.style.maxHeight = null;
+      });
+
+      // Se o clicado não estava aberto, abre ele
+      if (!wasActive) {
+        clickedItem.classList.add('active');
+        const details = clickedItem.querySelector('.timeline-details');
+        if (details) {
+          details.style.maxHeight = details.scrollHeight + "px";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
