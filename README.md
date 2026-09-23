@@ -1,1 +1,1 @@
-# https://lucasgeracaotech.github.io/portfolio.github.io/
+# https://lucasgeracaotech.github.io/portfolio/
